@@ -31,13 +31,15 @@ setTimeout(() => {
 
 setTimeout(() => {
     gif.src="beans.gif"
-    gif.style=`width:200px`
+    gif.style=`width:200px; margin:10px auto; border-radius:100px;`
 }, 4000);
 
 setTimeout(() => {
     gif.src="bored.gif"
     gif.style=`width:50px`
-}, 6000);
+}, 7000);
+
+
 setInterval(() => {
     
     setTimeout(() => {
@@ -46,13 +48,13 @@ setInterval(() => {
     
     setTimeout(() => {
         gif.src="beans.gif"
-        gif.style=`width:200px`
+        gif.style=`width:200px; margin:10px auto; border-radius:100px;`
     }, 4000);
     
     setTimeout(() => {
         gif.src="bored.gif"
         gif.style=`width:50px`
-    }, 6000);
+    }, 7000);
     
 
-},7000);
+},8000);
