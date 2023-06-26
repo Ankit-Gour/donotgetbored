@@ -30,7 +30,7 @@ setTimeout(() => {
 }, 2000);
 
 setTimeout(() => {
-    gif.src="baby.jpg"
+    gif.src="beans.gif"
     gif.style=`width:200px`
 }, 4000);
 
@@ -45,7 +45,7 @@ setInterval(() => {
     }, 2000);
     
     setTimeout(() => {
-        gif.src="baby.jpg"
+        gif.src="beans.gif"
         gif.style=`width:200px`
     }, 4000);
     
