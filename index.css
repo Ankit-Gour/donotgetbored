@@ -1,87 +1,62 @@
-act();
-var prev_type="";
-function act() {
-  document.getElementById("act").innerHTML = ``;
-  fetch("https://www.boredapi.com/api/activity")
-    .then((data) => {
-      return data.json();
-    })
-    .then((data) => {
-        let activity =   data.activity.charAt(0).toUpperCase() + data.activity.slice(1);
-        let type = data.type.charAt(0).toUpperCase() + data.type.slice(1);
-        
-        document.getElementById("act").innerHTML = `${activity}`;
-        document.getElementById("type").innerHTML = `${type}`;
-
-        
-      
-    });
+#act {
+  height: 60px;
+  animation: slide-left 1s ease-in 0s 1 forwards;
+}
+#btn {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+@keyframes button {
+  from {
+    background-color: rgb(48, 48, 186);
+    color: white;
+  }
+  to {
+    color: rgb(32, 11, 218);
+    background-color: rgb(236, 236, 237);
+  }
+}
+#btn:hover {
+  animation: button 0.2s ease-in 0ms 1 forwards;
 }
 
-setInterval(() => {
-    act()
-}, 5000);
-
-
-
-
-setTimeout(() => {
-    gif.src="happy.gif"
-}, 2000);
-
-setTimeout(() => {
-    gif.src="bored.gif"
-   
-}, 4000);
-
-setTimeout(() => {
-    gif.src="wave.gif"
-    
-}, 6000);
-
-
-
-setInterval(() => {
-    
-    setTimeout(() => {
-        gif.src="happy.gif"
-    }, 2000);
-
-    
-    setTimeout(() => {
-        gif.src="bored.gif"
-       
-    }, 4000);
-
-    setTimeout(() => {
-        gif.src="wave.gif"
-        gif.style=`width:50px`
-    }, 6000);
-    
-
-},7000);
-
-
-function mr(){
-
-setTimeout(() => {
-    beans.src="beans1.gif"
-},2000);
-setTimeout(() => {
-    beans.src="beans2.gif"
-    
-},5500);
-setTimeout(() => {
-    beans.src="beans3.gif"
-},11500);
-setTimeout(() => {
-    beans.src="beans4.gif"
-},17500);
-setTimeout(() => {
-    beans.src=""
-},20000);
-
-   
+#type {
+  font-weight: 600;
+  font-size: 20px;
+  animation: slide-left 1s ease-in 0s 1 forwards;
 }
 
-mr()
+@keyframes slide-left {
+  0% {
+    margin-left: 100vw;
+  }
+  250% {
+    margin-left: 0vw;
+  }
+  50% {
+    margin-left: 80vw;
+  }
+  70% {
+    margin-left: 2vw;
+  }
+}
+
+#gif-container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; 
+}
+
+#gif {
+  width: 50px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+#beans {
+width: 95vw;
+margin: 0 auto;
+}
