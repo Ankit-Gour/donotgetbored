@@ -36,7 +36,7 @@ setTimeout(() => {
 
 setTimeout(() => {
     gif.src="bored.gif"
-    gif.style=`width:50px margin:10px auto;`
+    gif.style=`width:50px`
 }, 6000);
 setInterval(() => {
     
