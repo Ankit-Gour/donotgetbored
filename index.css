@@ -1,0 +1,56 @@
+#act {
+  height: 60px;
+  animation: slide-left 1s ease-in 0s 1 forwards;
+}
+#btn {
+  
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+@keyframes button {
+  from {
+    background-color: rgb(48, 48, 186);
+    color: white;
+  }
+  to {
+    color: rgb(32, 11, 218);
+    background-color: rgb(236, 236, 237);
+  }
+}
+#btn:hover {
+  animation: button 0.2s ease-in 0ms 1 forwards;
+}
+
+#type {
+  font-weight: 600;
+  font-size: 20px;
+  animation: slide-left 1s ease-in 0s 1 forwards;
+}
+
+@keyframes slide-left {
+  0% {
+    margin-left: 100vw;
+  }
+  250% {
+    margin-left: 0vw;
+  }
+  50% {
+    margin-left: 80vw;
+  }
+  70% {
+    margin-left: 2vw;
+  }
+}
+
+.container{
+  
+  overflow: hidden;
+}
+
+
+#gif{
+  width:50px;
+  margin-right: 25px;
+
+}
