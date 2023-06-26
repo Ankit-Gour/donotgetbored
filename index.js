@@ -20,7 +20,7 @@ function act() {
 
 setInterval(() => {
     act()
-}, 3000);
+}, 5000);
 
 
 
@@ -30,14 +30,15 @@ setTimeout(() => {
 }, 2000);
 
 setTimeout(() => {
-    gif.src="beans.gif"
-    gif.style=`width:200px; margin:10px auto; border-radius:100px;`
+    gif.src="bored.gif"
+   
 }, 4000);
 
 setTimeout(() => {
-    gif.src="bored.gif"
-    gif.style=`width:50px`
-}, 7000);
+    gif.src="wave.gif"
+    
+}, 6000);
+
 
 
 setInterval(() => {
@@ -45,16 +46,42 @@ setInterval(() => {
     setTimeout(() => {
         gif.src="happy.gif"
     }, 2000);
-    
-    setTimeout(() => {
-        gif.src="beans.gif"
-        gif.style=`width:200px; margin:10px auto; border-radius:100px;`
-    }, 4000);
+
     
     setTimeout(() => {
         gif.src="bored.gif"
+       
+    }, 4000);
+
+    setTimeout(() => {
+        gif.src="wave.gif"
         gif.style=`width:50px`
-    }, 7000);
+    }, 6000);
     
 
-},8000);
+},7000);
+
+
+function mr(){
+
+setTimeout(() => {
+    beans.src="beans1.gif"
+},2000);
+setTimeout(() => {
+    beans.src="beans2.gif"
+    
+},5500);
+setTimeout(() => {
+    beans.src="beans3.gif"
+},11500);
+setTimeout(() => {
+    beans.src="beans4.gif"
+},17500);
+setTimeout(() => {
+    beans.src=""
+},20000);
+
+   
+}
+
+mr()
